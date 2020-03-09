@@ -1,0 +1,22 @@
+.carousel {
+  background-color: yellowgreen;
+  width: 80%;
+  height: 320px;
+  margin: 10px auto;
+}
+
+.image-xs {
+  display: block;
+  margin: auto;
+}
+
+@media (max-width: 375px) {
+  .carousel {
+    display: none;
+  }
+}
+@media (min-width: 376px) {
+  .image-xs {
+    display: none;
+  }
+}

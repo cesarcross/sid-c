@@ -1,49 +1,32 @@
 <h1>Pages#contato</h1>
-
 <p>Find me in app/views/pages/contato.html.erb</p>
-
-
-<div class="container">
-	<div class="row">
-      <div class="col-md-6 col-md-offset-3">
-        <div class="well well-sm">
-          <form class="form-horizontal" action="" method="post">
-          <fieldset>
-            <legend class="text-center">Contact us</legend>
-    
-            <!-- Name input-->
-            <div class="form-group">
-              <label class="col-md-3 control-label" for="name">Name</label>
-              <div class="col-md-9">
-                <input id="name" name="name" type="text" placeholder="Your name" class="form-control">
-              </div>
-            </div>
-    
-            <!-- Email input-->
-            <div class="form-group">
-              <label class="col-md-3 control-label" for="email">Your E-mail</label>
-              <div class="col-md-9">
-                <input id="email" name="email" type="text" placeholder="Your email" class="form-control">
-              </div>
-            </div>
-    
-            <!-- Message body -->
-            <div class="form-group">
-              <label class="col-md-3 control-label" for="message">Your message</label>
-              <div class="col-md-9">
-                <textarea class="form-control" id="message" name="message" placeholder="Please enter your message here..." rows="5"></textarea>
-              </div>
-            </div>
-    
-            <!-- Form actions -->
-            <div class="form-group">
-              <div class="col-md-12 text-right">
-                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
-              </div>
-            </div>
-          </fieldset>
-          </form>
-        </div>
-      </div>
-	</div>
+<div class="formulario">
+  <form class="contact-form">
+    <ul>
+      <li>
+        <input type="text" name="field1" class="field-style field-full align-left" placeholder="Nome" />
+      </li>
+      <li>
+        <input type="email" name="field2" class="field-style field-full align-right" placeholder="Email" />
+      </li>
+      <li>
+        <input type="text" name="field3" class="field-style field-full align-left" placeholder="Telefone" />
+      </li>
+      <li>
+        <input type="text" name="field3" class="field-style field-full align-none" placeholder="Assunto" />
+      </li>
+      <li>
+        <textarea name="field5" class="field-style" placeholder="Escreva sua mensagem"></textarea>
+      </li>
+      <li>
+        <input type="submit" value="Enviar" />
+      </li>
+    </ul>
+  </form>
+  <div class="mapa">
+    <%= link_to "https://goo.gl/maps/uhPSoHe2X9ZF5E1g6", :target => "_blank" do %>
+      <%= image_tag ('mapa.png') %>
+    <% end %>
+  </div>
 </div>
+<%= image_tag('waa.png', size: '50x50', class: 'whats') %>

@@ -11,24 +11,31 @@
   </head>
   <body>
 <nav class="navbar navbar-expand-lg">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <a class="navbar-brand" href="#">SIG Diamantados <%= image_tag("diamond_s.png") %></a>
-
+  <!-- <a class="navbar-brand" href="#"><%= image_tag("diamond_s.png") %> SIG Diamantados </a> -->
+    <%= link_to root_path, class: "navbar-brand" do %>
+      <%= image_tag ('diamond_s.png') %>
+      SIG Diamantados
+    <% end %>
+    <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
   <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home</a>
+        <!-- <a class="nav-link" href="#">Home</a> -->
+        <%= link_to "Home", root_path, class: "nav-link" %>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Produtos</a>
+        <!-- <a class="nav-link" href="#">Produtos</a> -->
+        <%= link_to "Produtos", produtos_path, class: "nav-link" %>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Sobre</a>
+        <!-- <a class="nav-link" href="#">Sobre</a> -->
+        <%= link_to "Sobre", sobre_path, class: "nav-link" %>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Contato</a>
+        <!-- <a class="nav-link" href="#">Contato</a> -->
+        <%= link_to "Contato", contato_path, class: "nav-link" %>
       </li>
     </ul>
   </div>
@@ -109,12 +116,12 @@
       <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
 
         <!-- Contact details -->
-        <h5 class="font-weight-bold text-uppercase mb-4">Address</h5>
+        <h5 class="font-weight-bold text-uppercase mb-4">Endereço</h5>
 
         <ul class="list-unstyled">
           <li>
             <p>
-              <i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+              <i class="fas fa-home mr-3"></i> Rua Manoel da Nóbrega, 334, CEP 09910-720 - Diadema - SP</p>
           </li>
           <li>
             <p>
@@ -122,7 +129,7 @@
           </li>
           <li>
             <p>
-              <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+              <i class="fas fa-phone mr-3"></i> +55 11 99757 2346</p>
           </li>
           <li>
             <p>
@@ -139,7 +146,7 @@
       <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
 
         <!-- Social buttons -->
-        <h5 class="font-weight-bold text-uppercase mb-4">Follow Us</h5>
+        <h5 class="font-weight-bold text-uppercase mb-4">Acompanhe</h5>
 
         <!-- Facebook -->
         <a type="button" class="btn-floating btn-fb">
