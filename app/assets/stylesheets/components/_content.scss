@@ -1,4 +1,28 @@
+body {
+  // background-color: #faf5e4;
+  background-color: #f8f8f8;
+}
+
 .texto-sobre {
   width: 75%;
-  margin: 0 auto;
+  margin: 20px auto;
+}
+
+.about {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.about h2 {
+  font-weight: bold;
+  margin: 20px auto;
+}
+
+.container-video {
+  margin: 30px auto;
+}
+
+.mapa img {
+  margin-bottom: 20px;
 }

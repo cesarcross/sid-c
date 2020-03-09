@@ -20,11 +20,18 @@
 
 .social {
   font-size: 50px;
+  i {
+    color: white;
+  }
+  i:hover{
+    color: yellow;
+  }
 }
 
 
-// .list-unstyled li p {
-//   .fas {
-//     width: 300px;
-//   }
-// }
+
+.list-unstyled li {
+  width: max-content;
+  margin: auto;
+  margin-left: 0;
+}
