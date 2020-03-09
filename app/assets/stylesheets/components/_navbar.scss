@@ -2,11 +2,16 @@
   // background-color: #424874;
   background-color: $blue-sig;
   color: white;
+  font-size: 20px;
 }
 
 .navbar-brand, .nav-link {
   color: white;
   font-weight: bold;
+}
+
+.navbar-brand:hover {
+  color: yellow;
 }
 
 .nav-link:hover {
@@ -15,4 +20,6 @@
 
 .nav-link {
   text-align: right;
+  margin: auto;
 }
+

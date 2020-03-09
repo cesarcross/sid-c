@@ -1,12 +1,15 @@
 
+.formulario {
+	display: flex;
+}
+
 .contact-form{
-  // max-width: 450px;
-  max-width: 90%;
+  width: 50%;
 	background: #FAFAFA;
 	padding: 30px;
 	margin: 50px auto;
 	box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
-	border-radius: 10px;
+	border-radius: 5px;
   border: 2px solid #305A72;
 }
 .contact-form ul{
@@ -24,6 +27,7 @@
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box; 
 	padding: 8px;
+	margin: inherit;
 	outline: none;
 	border: 1px solid #B0CFE0;
 	-webkit-transition: all 0.30s ease-in-out;
@@ -35,9 +39,7 @@
 	box-shadow: 0 0 5px #B0CFE0;
 	border:1px solid #B0CFE0;
 }
-.contact-form ul li .field-split{
-	width: 49%;
-}
+
 .contact-form ul li .field-full{
 	width: 100%;
 }
@@ -64,9 +66,21 @@
 	padding: 8px 18px;
 	text-decoration: none;
 	font: 12px Arial, Helvetica, sans-serif;
+	float: right;
 }
 .contact-form ul li input[type="button"]:hover, 
 .contact-form ul li input[type="submit"]:hover {
 	background: linear-gradient(to bottom, #2D77A2 5%, #337DA8 100%);
 	background-color: #28739E;
 }
+
+.mapa {
+	margin: auto;
+}
+
+@media (max-width: 700px) {
+	.formulario {
+		flex-direction: column;
+	}
+}
+
