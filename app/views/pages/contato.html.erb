@@ -1,38 +1,32 @@
-
-
 <h1>Pages#contato</h1>
-
 <p>Find me in app/views/pages/contato.html.erb</p>
-
-
 <div class="formulario">
-    <form class="contact-form">
+  <form class="contact-form">
     <ul>
-    <li>
+      <li>
         <input type="text" name="field1" class="field-style field-full align-left" placeholder="Nome" />
-    </li>
-    <li>
+      </li>
+      <li>
         <input type="email" name="field2" class="field-style field-full align-right" placeholder="Email" />
-
-    </li>
-    <li>
+      </li>
+      <li>
         <input type="text" name="field3" class="field-style field-full align-left" placeholder="Telefone" />
-    </li>
-    <li>
-    <input type="text" name="field3" class="field-style field-full align-none" placeholder="Assunto" />
-    </li>
-    <li>
-    <textarea name="field5" class="field-style" placeholder="Escreva sua mensagem"></textarea>
-    </li>
-    <li>
-    <input type="submit" value="Enviar" />
-    </li>
+      </li>
+      <li>
+        <input type="text" name="field3" class="field-style field-full align-none" placeholder="Assunto" />
+      </li>
+      <li>
+        <textarea name="field5" class="field-style" placeholder="Escreva sua mensagem"></textarea>
+      </li>
+      <li>
+        <input type="submit" value="Enviar" />
+      </li>
     </ul>
-    </form>
-
-    <div class="mapa">
-        <%= link_to "https://goo.gl/maps/uhPSoHe2X9ZF5E1g6", :target => "_blank" do %>
-            <%= image_tag ('mapa.png') %>
-        <% end %>
-    </div>
+  </form>
+  <div class="mapa">
+    <%= link_to "https://goo.gl/maps/uhPSoHe2X9ZF5E1g6", :target => "_blank" do %>
+      <%= image_tag ('mapa.png') %>
+    <% end %>
+  </div>
 </div>
+<%= image_tag('waa.png', size: '50x50', class: 'whats') %>
