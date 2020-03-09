@@ -1,5 +1,5 @@
-<h1>Pages#contato</h1>
-<p>Find me in app/views/pages/contato.html.erb</p>
+<h2>Entre em contato para saber mais!</h2>
+
 <div class="formulario">
   <form class="contact-form">
     <ul>
@@ -23,10 +23,16 @@
       </li>
     </ul>
   </form>
+
   <div class="mapa">
-    <%= link_to "https://goo.gl/maps/uhPSoHe2X9ZF5E1g6", :target => "_blank" do %>
-      <%= image_tag ('mapa.png') %>
+    <%= link_to "https://goo.gl/maps/YVHzcVz7HzhFpRNo9", :target => "_blank" do %>
+      <%= image_tag ('endereco.png') %>
     <% end %>
   </div>
 </div>
-<%= image_tag('waa.png', size: '50x50', class: 'whats') %>
+
+<%= link_to "http://api.whatsapp.com/send?1=pt_BR&phone=5511997572346", :target => "_blank", class:"whats" do %>
+  <%= image_tag('waa.png', size: '50x50') %>
+<% end %>
+
+
