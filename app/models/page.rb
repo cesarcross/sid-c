@@ -5,6 +5,7 @@ class Page < MailForm::Base
   attribute :phone, validate: true
   validates :phone, numericality: true
   attribute :message, validate: true
+  attribute :text, validate: true
 
   def headers
     {

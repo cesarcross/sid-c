@@ -38,7 +38,8 @@
     <%= f.input :name, label: false, placeholder: "Nome" %>
     <%= f.input :email, label: false, placeholder: "Email" %>
     <%= f.input :phone, required: false, label: false, placeholder: "Telefone" %>
-    <%= f.input :message, as: :text, input_html: {rows: 10, cols: 10}, label: false, placeholder: "Escreva sua mensagem" %>
+    <%= f.input :message, label: false, placeholder: "Assunto" %>
+    <%= f.input :text, as: :text, input_html: {rows: 10, cols: 10}, label: false, placeholder: "Escreva sua mensagem" %>
     <%# <%= f.submit value: t('.send'), class: 'btn btn-dark float-right' %>
     <%# <%= f.button :submit, 'Enviar', class: "send_button" %>
     <%= f.button :submit, "Enviar", class: "btn btn-dark" %>
