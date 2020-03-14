@@ -1,5 +1,4 @@
 <h2>Entre em contato para saber mais!</h2>
-
 <div class="formulario">
   <form class="contact-form">
     <ul>
@@ -23,16 +22,23 @@
       </li>
     </ul>
   </form>
-
   <div class="mapa">
     <%= link_to "https://goo.gl/maps/YVHzcVz7HzhFpRNo9", :target => "_blank" do %>
       <%= image_tag ('endereco.png') %>
     <% end %>
   </div>
 </div>
-
 <%= link_to "http://api.whatsapp.com/send?1=pt_BR&phone=5511997572346", :target => "_blank", class:"whats" do %>
   <%= image_tag('waa.png', size: '50x50') %>
 <% end %>
-
-
+<div class="form-section__group">
+  <%= simple_form_for @page, html: { class: "contact-form"} do |f| %>
+    <%= f.input :name, label: false, placeholder: "Nome" %>
+    <%= f.input :email, label: false, placeholder: "Email" %>
+    <%= f.input :phone, required: false, label: false, placeholder: "Telefone" %>
+    <%= f.input :message, label: false, placeholder: "Escreva sua mensagem" %>
+    <%# <%= f.submit value: t('.send'), class: 'btn btn-dark float-right' %>
+    <%# <%= f.button :submit, 'Enviar', class: "send_button" %>
+    <%= f.button :submit, "Enviar", class: "btn btn-dark" %>
+  <% end %>
+</div>
