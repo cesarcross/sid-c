@@ -1,21 +1,31 @@
 .footer {
   background-color: $blue-sig;
   color: white;
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+  padding: 30px;
 }
 
-.footer-links {
+.rodape-title {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.rodapeb i {
+  padding-left: 15px;
+}
+
+.icon-info {
   display: flex;
-  align-items: center;
+  i {
+    margin-right: 10px;
+  }
 }
-.footer-links a {
-  color: black;
-  opacity: 0.15;
-  text-decoration: none;
-  font-size: 24px;
-  padding: 0px 10px;
-}
-.footer-links a:hover {
-  opacity: 1;
+
+.endereco p:first-of-type {
+  margin-bottom: 0;
 }
 
 .social {
@@ -23,15 +33,13 @@
   i {
     color: white;
   }
-  i:hover{
+  i:hover {
     color: yellow;
   }
 }
 
-
-
-.list-unstyled li {
-  width: max-content;
-  margin: auto;
-  margin-left: 0;
+@media (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+  }
 }
