@@ -10,79 +10,76 @@
     <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
   </head>
   <body>
-<nav class="navbar navbar-expand-lg">
-  <!-- <a class="navbar-brand" href="#"><%= image_tag("diamond_s.png") %> SIG Diamantados </a> -->
-    <%= link_to root_path, class: "navbar-brand" do %>
-      <%= image_tag('siglogo.jpeg', size: "40x35") %>
-      SIG Diamantados
-    <% end %>
-    <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-      <li class="nav-item active">
-        <!-- <a class="nav-link" href="#">Home</a> -->
-        <%= link_to "Home", root_path, class: "nav-link" %>
-      </li>
-      <li class="nav-item">
-        <!-- <a class="nav-link" href="#">Produtos</a> -->
-        <%= link_to "Produtos", produtos_path, class: "nav-link" %>
-      </li>
-      <li class="nav-item">
-        <!-- <a class="nav-link" href="#">Sobre</a> -->
-        <%= link_to "Sobre", sobre_path, class: "nav-link" %>
-      </li>
-      <li class="nav-item">
-        <!-- <a class="nav-link" href="#">Contato</a> -->
-        <%= link_to "Contato", contato_path, class: "nav-link" %>
-      </li>
-    </ul>
-  </div>
-</nav>    
+    <nav class="navbar navbar-expand-lg">
+      <!-- <a class="navbar-brand" href="#"><%= image_tag("diamond_s.png") %> SIG Diamantados </a> -->
+      <%= link_to root_path, class: "navbar-brand" do %>
+        <%= image_tag('siglogo.jpeg', size: "40x35") %>
+        SIG Diamantados
+      <% end %>
+      <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <!-- <a class="nav-link" href="#">Home</a> -->
+            <%= link_to "Home", root_path, class: "nav-link" %>
+          </li>
+          <li class="nav-item">
+            <!-- <a class="nav-link" href="#">Produtos</a> -->
+            <%= link_to "Produtos", produtos_path, class: "nav-link" %>
+          </li>
+          <li class="nav-item">
+            <!-- <a class="nav-link" href="#">Sobre</a> -->
+            <%= link_to "Sobre", sobre_path, class: "nav-link" %>
+          </li>
+          <li class="nav-item">
+            <!-- <a class="nav-link" href="#">Contato</a> -->
+            <%= link_to "Contato", contato_path, class: "nav-link" %>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <%= yield %>
-
-<!-- Footer MANUAL -->
-<div class="footer">
-  <div class="rodapea">
-    <h6 class="rodape-title">CONTATO</h6>
-    <div class="icon-info">
-      <i class="fas fa-home"></i> 
-      <div class="endereco">     
-        <p>Rua Lucrécia Maciel, 344 Jabaquara </p>
-        <p>São Paulo SP CEP 04314-130</p>
+    <!-- Footer MANUAL -->
+    <div class="footer">
+      <div class="rodapea">
+        <h6 class="rodape-title">CONTATO</h6>
+        <div class="icon-info">
+          <i class="fas fa-home"></i>
+          <div class="endereco">
+            <p>Rua Lucrécia Maciel, 344 Jabaquara </p>
+            <p>São Paulo SP CEP 04314-130</p>
+          </div>
+        </div>
+        <div class="icon-info">
+          <i class="far fa-envelope"></i>
+          <p>contato@sigdiamantados.com.br</p>
+        </div>
+        <div class="icon-info">
+          <i class="fas fa-phone-volume"></i>
+          <div class="endereco">
+            <p>+55 11 2386-5763</p>
+            <p>+55 11 99757 2346</p>
+          </div>
+        </div>
+      </div>
+      <div class="rodapeb">
+        <h6 class="rodape-title">ACOMPANHE</h6>
+        <!-- Facebook -->
+        <a type="button" href="https://www.facebook.com/sig.diamantados" target="_blank" class="social">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <!-- Youtube -->
+        <a type="button" href="https://www.youtube.com/channel/UCmWOobiXM61qx4fIXLvUk4g" target="_blank" class="social">
+          <i class="fab fa-youtube-square"></i>
+        </a>
       </div>
     </div>
-    <div class="icon-info">
-      <i class="far fa-envelope"></i>
-      <p>contato@sigdiamantados.com.br</p>
+    <div class="footer-copyright text-center py-3">© 2020 SIG Diamantados. Todos os direitos reservados. CNPJ nº 64.180.128/0001-67
     </div>
-    <div class="icon-info">
-      <i class="fas fa-phone-volume"></i>
-      <div class="endereco">
-        <p>+55 11 2386-5763</p>
-        <p>+55 11 99757 2346</p>
-      </div>
-    </div>
-  </div>
-  <div class="rodapeb">
-    <h6 class="rodape-title">ACOMPANHE</h6>
-
-    <!-- Facebook -->
-    <a type="button" href="https://www.facebook.com/sig.diamantados" target="_blank" class="social">
-    <i class="fab fa-facebook-f"></i>
-    </a>
-    <!-- Youtube -->
-    <a type="button" href="https://www.youtube.com/channel/UCmWOobiXM61qx4fIXLvUk4g" target="_blank" class="social">
-    <i class="fab fa-youtube-square"></i>
-    </a>
-  </div>
-</div>
-<div class="footer-copyright text-center py-3">© 2020 SIG Diamantados. Todos os direitos reservados. CNPJ nº 64.180.128/0001-67
-</div>
-</footer>
-    <%= javascript_include_tag 'application' %>
-
-    <%= javascript_pack_tag 'application' %>
-  </body>
+  </footer>
+  <%= javascript_include_tag 'application' %>
+  <%= javascript_pack_tag 'application' %>
+</body>
 </html>
