@@ -1,40 +1,26 @@
 <div class="about">
   <h2>Entre em contato para saber mais!</h2>
-</div>
-
-<div class="formulario">
-  <form class="contact-form">
-    <ul>
-      <li>
-        <input type="text" name="field1" class="field-style field-full align-left" placeholder="Nome" />
-      </li>
-      <li>
-        <input type="email" name="field2" class="field-style field-full align-right" placeholder="Email" />
-      </li>
-      <li>
-        <input type="text" name="field3" class="field-style field-full align-left" placeholder="Telefone" />
-      </li>
-      <li>
-        <input type="text" name="field3" class="field-style field-full align-none" placeholder="Assunto" />
-      </li>
-      <li>
-        <textarea name="field5" class="field-style" placeholder="Escreva sua mensagem"></textarea>
-      </li>
-      <li>
-        <input type="submit" value="Enviar" />
-      </li>
-    </ul>
-  </form>
-
-  <div class="mapa">
-    <%= link_to "https://goo.gl/maps/YVHzcVz7HzhFpRNo9", :target => "_blank" do %>
-      <%= image_tag ('endereco.png') %>
+  <%# --- %>
+  <div class="form-section">
+    <%= simple_form_for @page, html: { class: "contact-form"} do |f| %>
+      <%= f.input :name, label: false, placeholder: "Nome" %>
+      <%= f.input :email, label: false, placeholder: "Email" %>
+      <%= f.input :phone, required: false, label: false, placeholder: "Telefone" %>
+      <%= f.input :message, label: false, placeholder: "Assunto" %>
+      <%= f.input :text, as: :text, input_html: {rows: 4, cols: 10}, label: false, placeholder: "Escreva sua mensagem" %>
+      <%# <%= f.submit value: t('.send'), class: 'btn btn-dark float-right' %>
+      <%# <%= f.button :submit, 'Enviar', class: "send_button" %>
+      <%= f.button :submit, "Enviar", class: "submit_button" %>
     <% end %>
+    <%# --- %>
+    <div class="mapa">
+      <%= link_to "https://goo.gl/maps/YVHzcVz7HzhFpRNo9", :target => "_blank" do %>
+        <%= image_tag ('endereco.png') %>
+      <% end %>
+    </div>
+    <%# --- %>
   </div>
 </div>
-
 <%= link_to "http://api.whatsapp.com/send?1=pt_BR&phone=5511997572346", :target => "_blank", class:"whats" do %>
   <%= image_tag('waa.png', size: '50x50') %>
 <% end %>
-
-
