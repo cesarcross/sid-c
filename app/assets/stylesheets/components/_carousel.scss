@@ -8,15 +8,16 @@
 
 .image-xs {
   display: block;
-  margin: auto;
+  margin: 10px auto;
+  width: 70vw;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   .carousel {
     display: none;
   }
 }
-@media (min-width: 376px) {
+@media (min-width: 501px) {
   .image-xs {
     display: none;
   }
